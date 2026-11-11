@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11101d">
+  <meta name="description" content="A little note for Saanvi, from Arsh.">
+  <title>For Saanvi — From Arsh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Play music">
+    <span class="music-icon">♫</span><span id="musicLabel">Play our song</span>
+  </button>
+  <audio id="song" preload="metadata" loop>
+    <source src="assets/the-night-we-met.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <main>
+    <section class="intro screen active" id="intro">
+      <div class="eyebrow"><span class="tiny-star">✦</span> A little something for you <span class="tiny-star">✦</span></div>
+      <div class="moon-wrap" aria-hidden="true"><div class="moon"></div><span class="moon-star star-a">✧</span><span class="moon-star star-b">✦</span><span class="moon-star star-c">·</span></div>
+      <p class="pretitle">Hey, Saanvi...</p>
+      <h1>Can we <em>talk?</em></h1>
+      <p class="intro-copy">I made a small corner of the internet<br class="desktop-only"> just to tell you something.</p>
+      <button class="primary-button" id="openLetter" type="button">Open this little note <span>→</span></button>
+      <p class="hint">Best experienced with the song on ♡</p>
+      <div class="scroll-mark" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="letter-section screen" id="letterSection" aria-hidden="true">
+      <div class="section-kicker">A note from the heart</div>
+      <div class="letter-card">
+        <div class="letter-top"><span>✦</span><span>JUST FOR YOU</span><span>✦</span></div>
+        <div class="letter-flower" aria-hidden="true">❋</div>
+        <p class="dear">Dear Saanvi,</p>
+        <h2>I'm <em>sorry.</em></h2>
+        <div class="letter-body">
+          <p>I never wanted you to feel ignored, and I never wanted my care to feel like control.</p>
+          <p>Somewhere between misunderstandings and things left unsaid, I made you feel differently than I intended. I'm genuinely sorry, Saanvi.</p>
+          <p>I care about you, and I want you to feel comfortable being yourself around me, without ever feeling pressured or restricted.</p>
+          <p>I don't expect everything to become okay with one apology. I just hope you know that you matter to me.</p>
+        </div>
+        <div class="signature"><span>With love,</span><strong>Arsh <i>♡</i></strong></div>
+        <div class="letter-bottom">✧ &nbsp; ENDLESSLY HUMAN, ALWAYS LEARNING &nbsp; ✧</div>
+      </div>
+      <button class="text-button" id="showThought" type="button">One more thing <span>↓</span></button>
+    </section>
+
+    <section class="closing screen" id="closing" aria-hidden="true">
+      <div class="closing-orbit" aria-hidden="true"><span>♡</span></div>
+      <div class="section-kicker">And before you go...</div>
+      <h2>No pressure.<br><em>Just honesty.</em></h2>
+      <p class="closing-copy">I know an apology can't undo a misunderstanding instantly. I just wanted to take responsibility for my part, listen better, and give you the space you need.</p>
+      <p class="closing-question">Whenever you're ready, I'd like to talk. ♡</p>
+      <div class="final-sign">— Arsh</div>
+      <button class="replay-button" id="replay" type="button">Read it again ↺</button>
+      <p class="footer-note">Made with care, just for Saanvi.</p>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
